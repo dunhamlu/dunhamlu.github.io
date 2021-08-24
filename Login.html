@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>登录页</title>
+    <!-- 公用样式文件 -->
+    <link rel="stylesheet" href="Library/css/reset.css">
+    <!-- 私有样式文件 -->
+    <link rel="stylesheet" type="text/css" href="css/Login.css">
+</head>
+
+<body>
+    <div id="wrap">
+        <h1>注册用户</h1>
+        <form action="aa.ph" method="post">
+            <div>
+                <label><span>会员名:</span><input type="text" class="text"></label>
+                <p class="meg">
+                    <!-- <i class="ati"></i>5-25个字符,一个汉字为了两个字符,推荐使用中文会员名 -->
+                </p>
+            </div>
+            <div><label><span></span><b id="count">0个字符</b></label></div>
+            <div>
+                <label><span>登录密码:</span><input type="password" class="pwd"></label>
+                <p class="meg">
+                    <!-- <i class="ati"></i>5-25个字符 -->
+                </p>
+            </div>
+            <div style="margin: 3px 0 10px 0"><label><span></span><em class="active">弱</em><em>中</em><em>强</em></label></div>
+            <div style="margin-bottom: 20px">
+                <label><span>确认密码:</span><input type="password" class="pwd2" disabled=""></label>
+                <p class="meg">
+                    <!-- <i class="ati"></i>请再输入一次 -->
+                </p>
+            </div>
+            <div><input type="submit" value="同意协议并注册" class="submitBtn btn" id="submitBtn"></div>
+        </form>
+    </div>
+    <script src="js/Login.js" type="text/javascript" charset="utf-8" async defer></script>
+</body>
+
+</html>

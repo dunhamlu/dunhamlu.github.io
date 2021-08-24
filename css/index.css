@@ -1,0 +1,112 @@
+@charset "utf-8";
+/* public */
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+a {
+  cursor: pointer;
+}
+/* main */
+.main {
+  width: 100%;
+}
+.topbar,
+.list,
+.info {
+  float: left;
+}
+.topbar {
+  width: 100%;
+  /* background: red; //测试样式 */
+}
+.topbar .header {
+  background: #0b5ea5;
+}
+.topbar .header .tipbox {
+  float: left;
+  height: 30px;
+  line-height: 30px;
+  /* border: 1px solid green;//测试样式 */
+}
+.topbar .header .layout {
+  position: relative;
+  height: 30px;
+  line-height: 30px;
+  width: 1150px;
+  min-width: 1150px;
+  clear: both;
+  margin: 0 auto;
+  /* border:1px solid red;//测试样式 */
+}
+.topbar .header .layout .Fleft {
+  position: relative;
+  padding-left: 120px;
+  float: left;
+}
+.topbar .header .layout .Fleft a {
+  padding: 0 4px;
+  margin-right: 5px;
+  position: relative;
+}
+.topbar .header .layout .Fleft span {
+  margin-right: 5px;
+  font-size: 12px;
+}
+.topbar .header .layout .Fleft .logo-box {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 3;
+}
+.topbar .header .layout .Fleft .logo-box .logoimg {
+  display: block;
+  width: 120px;
+  height: 40px;
+  line-height: 30px;
+  color: #ffffff;
+  font-size: 1.5em;
+  font-family: "Times New Roman", Georgia, Serif;
+  position: absolute;
+  z-index: 2;
+  top: 0;
+  left: 8px;
+}
+.topbar .header .layout .Fleft .logo-box .logoimg a {
+  display: block;
+  width: 18px;
+  height: 26px;
+  text-indent: -9999em;
+  background: url(../img/point_img.png) 0 0 no-repeat;
+  position: absolute;
+  z-index: 1;
+  top: 2px;
+  left: 0;
+  /* border: 1px solid green; //测试样式 */
+}
+.topbar .header .layout .Fleft .period {
+  position: relative;
+}
+.topbar .header .layout .Fleft .period .periodbox span {
+  display: block;
+}
+.topbar .header .layout .Fleft .period .periodbox a {
+  display: block;
+  color: #edecf2;
+}
+.topbar .header .layout .Fleft .period .periodbox span {
+  float: left;
+}
+.list {
+  width: 15%;
+  background: green;
+}
+.info {
+  width: 85%;
+  background: pink;
+}
+.list,
+.info {
+  margin-top: 35px;
+}

@@ -1,0 +1,28 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <title>图片由模糊变清楚</title>
+</head>
+
+<body>
+    <a href="http://www.forasp.cn/"><img src="http://www.forasp.cn/test/images/smail_showimg.jpg" name="myImage" width="901" height="567" id="myImage" alt="图片由模糊变清楚" /></a><br />
+    <center><span id="showinfo">正在加载-------</span></center>
+    <!--这里是一个缩略图的图像，开始是按照源图像大小打开该图像--->
+    <script type="text/javascript">
+    var img = new Image();
+
+    img.src = "http://www.forasp.cn/test/images/big_showimg.jpg";
+
+    img.onload = function()
+
+    { //这里是要加载的源图像，document.getElementById('myImage').src = this.src;   
+
+        document.getElementById('showinfo').innerHTML = '加载完毕,<a href=images/big_showimg.jpg>查看原图</a>';
+
+    }
+    </script>
+</body>
+
+</html>
